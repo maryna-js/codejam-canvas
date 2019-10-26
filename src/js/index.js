@@ -22,7 +22,7 @@ function fillCanvas4() {
             ctx.fillRect(col * scale, row * scale, scale, scale);
             }
         }
-    }
+    };
 }
 
 let btn32 = document.getElementById('btn32');
@@ -36,13 +36,13 @@ function fillCanvas32() {
     request.send();
     request.onload = function() {
         let flattenedRGBAValues = request.response.flat(2);
-        let canvas = document.getElementById("canvas"); // Select our canvas element
+        let canvas = document.getElementById("canvas"); 
         let ctx = canvas.getContext("2d");
         canvas.height = 32;
         canvas.width = 32;
         const imgData = new ImageData(Uint8ClampedArray.from(flattenedRGBAValues), 32, 32);
         ctx.putImageData(imgData, 0, 0);
-    }
+    };
 }
 
 let btn256 = document.getElementById('btn256');
