@@ -269,6 +269,12 @@ img {
             margin-right: 40px;
             background: gray;
         }
+        & canvas {
+            width: 512px;
+            height: 512px;
+            border: 1px solid blue;
+            image-rendering: pixelated;
+        }
         &_size {
             display: flex;
             flex-direction: column;

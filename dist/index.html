@@ -16,7 +16,9 @@
                                 <p><a href="#">&#9776;</a></p>
                         </div>
                         <div class="header--container_logo-heading_title">
-                                <h1><a href="#" class="header--container_logo-heading_title_link">CodeJam - Pallete</a></h1>
+                                <h1>
+                                    <a href="#" class="header--container_logo-heading_title_link">CodeJam - Pallete</a>
+                                </h1>
                         </div>
                     </div>
                 </div>
@@ -24,7 +26,72 @@
                 </div>
             </div>
         </header>
-        <main class = "main"></main>
+        <main class ="main">
+            <div class="main--container">
+                <div class="main--container_side">
+                    <div class="main--container_side_tools">
+                        <div class="main--container_side_tools-bucket">
+                            <button>Paint bucket</button>
+                        </div>
+                        <div class="main--container_side_tools-choose">
+                            <button>Choose color</button>
+                        </div>
+                        <div class="main--container_side_tools-move">
+                                <button>Move</button>
+                        </div>
+                        <div class="main--container_side_tools-transform">
+                                <button>Transform</button>
+                        </div>
+                    </div>
+                <div class="main--container_side_colors">
+                        <div class="main--container_side_colors">
+                                <div class="main--container_side_colors-current">
+                                    <div class="main--container_side_colors-current_icon"></div>
+                                    <div class="main--container_side_colors-current_txt">
+                                        <p>Current color</p>
+                                    </div>
+                                </div>
+                                <div class="main--container_side_colors-prev">
+                                    <div class="main--container_side_colors-prev_icon"></div>
+                                    <div class="main--container_side_colors-prev_txt">
+                                        <p>Prev color</p>
+                                    </div>
+                                </div>
+                                <div class="main--container_side_colors-color01">
+                                    <div class="main--container_side_colors-color01_icon"></div>
+                                    <div class="main--container_side_colors-color01_txt">
+                                        <button>red</button>
+                                    </div>
+                                </div>
+                                <div class="main--container_side_colors-color02">
+                                    <div class="main--container_side_colors-color02_icon"></div>
+                                    <div class="main--container_side_colors-color02_txt">
+                                        <button>blue</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+                </div>
+                <div class="main--container_canvas">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="main--container_size">
+                    <div class="main--container_size-check">
+                            <input type="checkbox" name="input1" value="4-4">
+                            <p class="main--container_size-check_txt">4x4</p>
+                    </div>
+                    <div class="main--container_size-check">
+                            <input type="checkbox" name="input2" value="32-32">
+                            <p class="main--container_size-check_txt">32x32</p>
+                    </div>
+                    <div class="main--container_size-check">
+                            <input type="checkbox" name="input2" value="256-256">
+                            <p class="main--container_size-check_txt">256x256</p>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer class="footer"></footer>
     </div>
     <script type="text/javascript" src="dist/bundle.js"></script>
