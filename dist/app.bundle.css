@@ -1,7 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);@import url(https://fonts.googleapis.com/css?family=Roboto);@font-face {
-  font-family: "YesevaOne";
-  src: url(assets/fonts/YesevaOne-Regular.ttf); }
-
 @font-face {
   font-family: "FuturaDemiC";
   src: url(assets/fonts/FuturaDemiC.ttf); }
@@ -385,10 +381,6 @@ input[type="search"] {
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
-
-@font-face {
-  font-family: "YesevaOne";
-  src: url(assets/fonts/YesevaOne-Regular.ttf); }
 
 @font-face {
   font-family: "FuturaDemiC";
@@ -396,7 +388,7 @@ input[type="checkbox"], input[type="radio"] {
 
 html {
   font-size: 10px;
-  font-family: serif; }
+  font-family: FuturaDemiC, serif; }
 
 body {
   min-height: 100vh; }
