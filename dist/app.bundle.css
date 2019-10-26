@@ -606,11 +606,11 @@ img {
         .main--container_side_colors-color02_txt button:hover {
           opacity: 0.7;
           color: blue; }
-  .main--container_canvas {
+  .main--container canvas {
     width: 512px;
     height: 512px;
-    margin-right: 40px;
-    background: gray; }
+    border: 1px solid blue;
+    image-rendering: pixelated; }
   .main--container_size {
     display: flex;
     flex-direction: column;
@@ -619,18 +619,19 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0 20px 20px -20px #333; }
     .main--container_size-check {
-      display: flex;
       height: 50px;
-      width: 100%;
-      border: 0;
-      background: white; }
-      .main--container_size-check input {
-        margin: 20px 0 0 30px; }
-      .main--container_size-check_txt {
-        padding-left: 20px;
+      width: 228px; }
+      .main--container_size-check button {
+        height: 50px;
+        width: 100%;
+        padding-left: 50px;
         color: rgba(0, 0, 0, 0.5);
+        background: white;
+        border: 0;
+        border-bottom: 1px solid #ececec;
         font-size: 16px;
         line-height: 24px;
         text-align: left; }
-    .main--container_size-check:hover {
-      background: rgba(0, 0, 0, 0.12); }
+      .main--container_size-check button:hover {
+        opacity: 0.5;
+        background: rgba(0, 0, 0, 0.1); }
