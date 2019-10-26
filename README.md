@@ -1,4 +1,4 @@
-# repair-design-project
+# codejam-canvas
 
 
 ## Getting Started

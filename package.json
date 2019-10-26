@@ -1,5 +1,5 @@
 {
-  "name": "repair-design-project",
+  "name": "codejam-canvas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maryna-js/repair-design-project.git"
+    "url": "git+https://github.com/maryna-js/codejam-canvas.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maryna-js/repair-design-project/issues"
+    "url": "https://github.com/maryna-js/codejam-canvas/issues"
   },
-  "homepage": "https://github.com/maryna-js/repair-design-project#readme",
+  "homepage": "https://github.com/maryna-js/codejam-canvas#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "copy-webpack-plugin": "^5.0.4",
