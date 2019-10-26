@@ -45,4 +45,19 @@ function fillCanvas32() {
     }
 }
 
+let btn256 = document.getElementById('btn256');
+btn256.addEventListener('click', fillCanvas256);
+
+function fillCanvas256() {
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+    let img = new Image();
+    img.onload = function() {
+    canvas.width = 256;
+    canvas.height = 256;
+    ctx.drawImage(img, 0, 0);
+    };
+    img.src = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/image.png';
+}
+
 
