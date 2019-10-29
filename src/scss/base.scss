@@ -1,5 +1,12 @@
 @import './_normalize';
 @import './typography';
+$screamingreen: #41F795;
+$black: #000000;
+$sunsetorange: #F74141;
+$silver: #C4C4C4;
+$pictonblue: #41B6F7;
+$gallery: #ececec;
+$mineshaft: #333333;
 
 html {
     font-size: 10px;
@@ -37,7 +44,7 @@ img {
         width: 100%;
         height: 48px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-        box-shadow: 0 20px 20px -20px #333;
+        box-shadow: 0 20px 20px -20px $mineshaft;
         &_logo-heading {
             display: flex;
             &_menu {
@@ -46,7 +53,7 @@ img {
             &_menu {
                 &-txt {
                     font-size: 20px;
-                    color: #000000;
+                    color: $black;
                 }
             }
             &_title {
@@ -81,7 +88,7 @@ img {
                 margin-bottom: 80px;
                 padding-top: 10px;
                 border: 1px solid rgba(0, 0, 0, 0.3);
-                box-shadow: 0 20px 20px -20px #333;
+                box-shadow: 0 20px 20px -20px $mineshaft;
             }
             &_tools {
                 &-bucket {
@@ -101,7 +108,7 @@ img {
                     }
                     & button:hover {
                         opacity: 0.5;
-                        border: 1px solid #ececec;
+                        border: 1px solid $gallery;
                     }
                 }
                 &-choose {
@@ -122,7 +129,7 @@ img {
                     }
                     & button:hover {
                         opacity: 0.5;
-                        border: 1px solid #ececec;
+                        border: 1px solid $gallery;
                     }
                 }
                 &-move {
@@ -142,7 +149,7 @@ img {
                     }
                     & button:hover {
                         opacity: 0.5;
-                        border: 1px solid #ececec;
+                        border: 1px solid $gallery;
                     }
                 }
                 &-transform {
@@ -162,7 +169,7 @@ img {
                     }
                     & button:hover {
                         opacity: 0.5;
-                        border: 1px solid #ececec;
+                        border: 1px solid $gallery;
                     }
                 }
             }
@@ -170,7 +177,7 @@ img {
                 width: 228px;
                 height: 228px;
                 border: 1px solid rgba(0, 0, 0, 0.3);
-                box-shadow: 0 20px 20px -20px #333;
+                box-shadow: 0 20px 20px -20px $mineshaft;
                 &-current {
                     display: flex;
                     &_icon {
@@ -178,7 +185,7 @@ img {
                         width: 20px;
                         border-radius: 50%;
                         margin: 17px 0 0 17px;
-                        background: #C4C4C4;
+                        background: $silver;
                         border: 1px solid #000000;
                         box-sizing: border-box;
                     }
@@ -198,7 +205,7 @@ img {
                         width: 20px;
                         border-radius: 50%;
                         margin: 17px 0 0 17px;
-                        background: #41F795;
+                        background: $screamingreen;
                         border: 1px solid #000000;
                         box-sizing: border-box;
                     }
@@ -217,7 +224,7 @@ img {
                         width: 20px;
                         border-radius: 50%;
                         margin: 17px 0 0 17px;
-                        background: #F74141;
+                        background: $sunsetorange;
                         border: 1px solid #000000;
                         box-sizing: border-box;
                     }
@@ -244,7 +251,7 @@ img {
                         width: 20px;
                         border-radius: 50%;
                         margin: 17px 0 0 17px;
-                        background: #41B6F7;
+                        background: $pictonblue;
                         border: 1px solid #000000;
                         box-sizing: border-box;
                     }
@@ -278,7 +285,7 @@ img {
             width: 228px;
             height: 228px;
             border: 1px solid rgba(0, 0, 0, 0.3);
-            box-shadow: 0 20px 20px -20px #333;
+            box-shadow: 0 20px 20px -20px $mineshaft;
             &-check {
                 height: 50px;
                 width: 228px;
@@ -289,7 +296,7 @@ img {
                     color: rgba(0, 0, 0, 0.5);
                     background: white;
                     border: 0;
-                    border-bottom: 1px solid #ececec;
+                    border-bottom: 1px solid $gallery;
                     font-size: 16px;
                     line-height: 24px;
                     text-align: left;
