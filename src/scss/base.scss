@@ -43,14 +43,18 @@ img {
             &_menu {
                 margin-top: -10px;
             }
-            &_menu p {
-                font-size: 20px;
-                color: #000000;
+            &_menu {
+                &-txt {
+                    font-size: 20px;
+                    color: #000000;
+                }
             }
-            &_title h1 a {
-                margin-top: 10px;
-                padding-left: 20px;
-                color: #000000;
+            &_title {
+                &_link {
+                    margin-top: 10px;
+                    padding-left: 20px;
+                    color: #000000;
+                }
             }
         }
         &_menu {
