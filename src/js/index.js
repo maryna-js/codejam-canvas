@@ -17,9 +17,9 @@ function fillCanvas4() {
         canvas.width = 4;
         canvas.height = 4;
         for(let row = 0; row < height; row++) {
-        for(let col = 0; col < width; col++) {
-            ctx.fillStyle = '#' + matrix4x4[row][col];
-            ctx.fillRect(col * scale, row * scale, scale, scale);
+            for(let col = 0; col < width; col++) {
+                ctx.fillStyle = '#' + matrix4x4[row][col];
+                ctx.fillRect(col * scale, row * scale, scale, scale);
             }
         }
     };
@@ -53,9 +53,9 @@ function fillCanvas256() {
     let ctx = canvas.getContext("2d");
     let img = new Image();
     img.onload = function() {
-    canvas.width = 256;
-    canvas.height = 256;
-    ctx.drawImage(img, 0, 0);
+        canvas.width = 256;
+        canvas.height = 256;
+        ctx.drawImage(img, 0, 0);
     };
     img.src = 'https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/stage-2/codejam-canvas/data/image.png';
 }
