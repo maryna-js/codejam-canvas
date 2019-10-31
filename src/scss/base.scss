@@ -1,12 +1,12 @@
 @import './_normalize';
 @import './typography';
-$screamingreen: #41F795;
-$black: #000000;
-$sunsetorange: #F74141;
-$silver: #C4C4C4;
-$pictonblue: #41B6F7;
-$gallery: #ececec;
-$mineshaft: #333333;
+$main-color-screamingreen: #41F795;
+$main-color-black: #000000;
+$main-color-sunsetorange: #F74141;
+$main-color-silver: #C4C4C4;
+$main-color-pictonblue: #41B6F7;
+$main-color-silver-active: #ececec;
+$main-color-mineshaft: #333333;
 
 html {
     font-size: 10px;
@@ -43,7 +43,7 @@ img {
     width: 100%;
     height: 48px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 0 20px 20px -20px $mineshaft;
+    box-shadow: 0 20px 20px -20px $main-color-mineshaft;
     &--logo {
         &-heading {
             display: flex;
@@ -53,7 +53,7 @@ img {
             &_menu {
                 &_txt {
                     font-size: 20px;
-                    color: $black;
+                    color: $main-color-black;
                 }
             }
             &_title {
@@ -87,7 +87,7 @@ img {
             margin-bottom: 80px;
             padding-top: 10px;
             border: 1px solid rgba(0, 0, 0, 0.3);
-            box-shadow: 0 20px 20px -20px $mineshaft;
+            box-shadow: 0 20px 20px -20px $main-color-mineshaft;
         }
         &_tools {
             &-bucket {
@@ -107,7 +107,7 @@ img {
                 }
                 & button:hover {
                     opacity: 0.5;
-                    border: 1px solid $gallery;
+                    border: 1px solid $main-color-silver-active;
                 }
             }
             &-choose {
@@ -128,7 +128,7 @@ img {
                 }
                 & button:hover {
                     opacity: 0.5;
-                    border: 1px solid $gallery;
+                    border: 1px solid $main-color-silver-active;
                 }
             }
             &-move {
@@ -148,7 +148,7 @@ img {
                 }
                 & button:hover {
                     opacity: 0.5;
-                    border: 1px solid $gallery;
+                    border: 1px solid $main-color-silver-active;
                 }
             }
             &-transform {
@@ -168,7 +168,7 @@ img {
                 }
                 & button:hover {
                     opacity: 0.5;
-                    border: 1px solid $gallery;
+                    border: 1px solid $main-color-silver-active;
                 }
             }
         }
@@ -176,7 +176,7 @@ img {
             width: 228px;
             height: 228px;
             border: 1px solid rgba(0, 0, 0, 0.3);
-            box-shadow: 0 20px 20px -20px $mineshaft;
+            box-shadow: 0 20px 20px -20px $main-color-mineshaft;
             &-current {
                 display: flex;
                 &_icon {
@@ -184,7 +184,7 @@ img {
                     width: 20px;
                     border-radius: 50%;
                     margin: 17px 0 0 17px;
-                    background: $silver;
+                    background: $main-color-silver;
                     border: 1px solid #000000;
                     box-sizing: border-box;
                 }
@@ -204,7 +204,7 @@ img {
                     width: 20px;
                     border-radius: 50%;
                     margin: 17px 0 0 17px;
-                    background: $screamingreen;
+                    background: $main-color-screamingreen;
                     border: 1px solid #000000;
                     box-sizing: border-box;
                 }
@@ -223,7 +223,7 @@ img {
                     width: 20px;
                     border-radius: 50%;
                     margin: 17px 0 0 17px;
-                    background: $sunsetorange;
+                    background: $main-color-sunsetorange;
                     border: 1px solid #000000;
                     box-sizing: border-box;
                 }
@@ -250,7 +250,7 @@ img {
                     width: 20px;
                     border-radius: 50%;
                     margin: 17px 0 0 17px;
-                    background: $pictonblue;
+                    background: $main-color-pictonblue;
                     border: 1px solid #000000;
                     box-sizing: border-box;
                 }
@@ -284,7 +284,7 @@ img {
         width: 228px;
         height: 228px;
         border: 1px solid rgba(0, 0, 0, 0.3);
-        box-shadow: 0 20px 20px -20px $mineshaft;
+        box-shadow: 0 20px 20px -20px $main-color-mineshaft;
         &-check {
             height: 50px;
             width: 228px;
@@ -295,7 +295,7 @@ img {
                 color: rgba(0, 0, 0, 0.5);
                 background: white;
                 border: 0;
-                border-bottom: 1px solid $gallery;
+                border-bottom: 1px solid $main-color-silver-active;
                 font-size: 16px;
                 line-height: 24px;
                 text-align: left;
