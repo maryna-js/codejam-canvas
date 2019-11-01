@@ -1,0 +1,309 @@
+@import './_normalize';
+@import './typography';
+$main-color-screamingreen: #41F795;
+$main-color-black: #000000;
+$main-color-sunsetorange: #F74141;
+$main-color-silver: #C4C4C4;
+$main-color-pictonblue: #41B6F7;
+$main-color-silver-active: #ececec;
+$main-color-mineshaft: #333333;
+
+html {
+    font-size: 10px;
+    font-family: FuturaDemiC, serif;
+}
+
+body {
+    min-height: 100vh;  
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 2rem 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 20px -20px $main-color-mineshaft;
+    &--logo {
+        &-heading {
+            display: flex;
+            &_menu {
+                margin-top: -10px;
+            }
+            &_menu {
+                &_txt {
+                    font-size: 20px;
+                    color: $main-color-black;
+                }
+            }
+            &_title {
+                &_link {
+                    margin-top: 10px;
+                    padding-left: 20px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    &--menu {
+        height: 40px;
+        width: 40px;
+        background-image: url(./../assets/img/menu.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    &--side {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        &_tools {
+            width: 228px;
+            height: 228px;
+            margin-bottom: 80px;
+            padding-top: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 20px -20px $main-color-mineshaft;
+        }
+        &_tools {
+            &-bucket {
+                & button {
+                    height: 50px;
+                    width: 100%;
+                    border: 0;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 70px;
+                    background: white;
+                    background-image: url(./../assets/img/icon-share.png);
+                    background-repeat: no-repeat;
+                    background-position: 10% 50%;
+                }
+                & button:hover {
+                    opacity: 0.5;
+                    border: 1px solid $main-color-silver-active;
+                }
+            }
+            &-choose {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                & button {
+                    height: 50px;
+                    width: 100%;
+                    border: 0;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 70px;
+                    background: white;
+                    background-image: url(./../assets/img/icon-upload.png);
+                    background-repeat: no-repeat;
+                    background-position: 10% 50%;
+                }
+                & button:hover {
+                    opacity: 0.5;
+                    border: 1px solid $main-color-silver-active;
+                }
+            }
+            &-move {
+                & button {
+                    height: 50px;
+                    width: 100%;
+                    border: 0;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 70px;
+                    background: white;
+                    background-image: url(./../assets/img/arrows-alt.png);
+                    background-repeat: no-repeat;
+                    background-position: 10% 50%;
+                }
+                & button:hover {
+                    opacity: 0.5;
+                    border: 1px solid $main-color-silver-active;
+                }
+            }
+            &-transform {
+                & button {
+                    height: 50px;
+                    width: 100%;
+                    border: 0;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 70px;
+                    background: white;
+                    background-image: url(./../assets/img/icon-trans.png);
+                    background-repeat: no-repeat;
+                    background-position: 10% 50%;
+                }
+                & button:hover {
+                    opacity: 0.5;
+                    border: 1px solid $main-color-silver-active;
+                }
+            }
+        }
+        &_colors {
+            width: 228px;
+            height: 228px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 20px -20px $main-color-mineshaft;
+            &-current {
+                display: flex;
+                &_icon {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin: 17px 0 0 17px;
+                    background: $main-color-silver;
+                    border: 1px solid #000000;
+                    box-sizing: border-box;
+                }
+                &_txt {
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 25px;
+                }
+            }
+            &-prev {
+                display: flex;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                &_icon {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin: 17px 0 0 17px;
+                    background: $main-color-screamingreen;
+                    border: 1px solid #000000;
+                    box-sizing: border-box;
+                }
+                &_txt {
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 25px;
+                }
+            }
+            &-color01 {
+                display: flex;
+                &_icon {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin: 17px 0 0 17px;
+                    background: $main-color-sunsetorange;
+                    border: 1px solid #000000;
+                    box-sizing: border-box;
+                }
+                &_txt button {
+                    height: 50px;
+                    width: 100%;
+                    border: 0;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 27px;
+                    background: white;
+                }
+                &_txt button:hover {
+                    opacity: 0.7;
+                    color: blue;
+                }
+            }
+            &-color02 {
+                display: flex;
+                &_icon {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin: 17px 0 0 17px;
+                    background: $main-color-pictonblue;
+                    border: 1px solid #000000;
+                    box-sizing: border-box;
+                }
+                &_txt button {
+                    height: 50px;
+                    width: 100%;
+                    border: 0;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 27px;
+                    background: white;
+                }
+                &_txt button:hover {
+                    opacity: 0.7;
+                    color: blue;
+                }
+            }
+        }
+    }
+    & canvas {
+        width: 512px;
+        height: 512px;
+        border: 1px solid blue;
+        image-rendering: pixelated;
+    }
+    &--size {
+        display: flex;
+        flex-direction: column;
+        width: 228px;
+        height: 228px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 0 20px 20px -20px $main-color-mineshaft;
+        &-check {
+            height: 50px;
+            width: 228px;
+            & button {
+                height: 50px;
+                width: 100%;
+                padding-left: 50px;
+                color: rgba(0, 0, 0, 0.5);
+                background: white;
+                border: 0;
+                border-bottom: 1px solid $main-color-silver-active;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: left;
+            }
+            & button:hover {
+                opacity: 0.5;
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }           
+    }
+}

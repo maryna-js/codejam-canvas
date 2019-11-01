@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codejam canvas</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+                <div class="header--logo">
+                    <div class="header--logo-heading">
+                        <div class="header--logo-heading_menu">
+                            <p class="header--logo-heading_menu_txt">
+                                <a href="#">&#9776;</a>
+                            </p>
+                        </div>
+                        <div class="header--logo-heading_title">
+                            <h1>
+                                <a href="#" class="header--logo-heading_title_link">CodeJam - Pallete</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="header--menu">
+                </div>
+        </header>
+        <main class ="main">
+
+                <div class="main--side">
+                    <div class="main--side_tools">
+                        <div class="main--side_tools-bucket">
+                            <button>Paint bucket</button>
+                        </div>
+                        <div class="main--side_tools-choose">
+                            <button>Choose color</button>
+                        </div>
+                        <div class="main--side_tools-move">
+                            <button>Move</button>
+                        </div>
+                        <div class="main--side_tools-transform">
+                            <button>Transform</button>
+                        </div>
+                    </div>
+                    <div class="main--side_colors">
+                        <div class="main--side_colors">
+                            <div class="main--side_colors-current">
+                                <div class="main--side_colors-current_icon"></div>
+                                <div class="main--side_colors-current_txt">
+                                    <p>Current color</p>
+                                </div>
+                            </div>
+                            <div class="main--side_colors-prev">
+                                <div class="main--side_colors-prev_icon"></div>
+                                <div class="main--side_colors-prev_txt">
+                                    <p>Prev color</p>
+                                </div>
+                            </div>
+                            <div class="main--side_colors-color01">
+                                <div class="main--side_colors-color01_icon"></div>
+                                <div class="main--side_colors-color01_txt">
+                                    <button>red</button>
+                                </div>
+                            </div>
+                            <div class="main--side_colors-color02">
+                                <div class="main--side_colors-color02_icon"></div>
+                                <div class="main--side_colors-color02_txt">
+                                    <button>blue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="canvas"></canvas>   
+                <div class="main--size">
+                    <div class="main--size-check">
+                        <button id="btn4">4x4</button>
+                    </div>
+                    <div class="main--size-check">
+                        <button id="btn32">32x32</button>
+                    </div>
+                    <div class="main--size-check">
+                        <button id="btn256">256x256</button>
+                    </div>
+                </div>
+
+        </main>
+    </div>
+</body>
+</html>
